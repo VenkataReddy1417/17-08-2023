@@ -1,5 +1,3 @@
-06-09-2023
-
 JENKINS:
 its a ci/cd tool.
 
@@ -62,7 +60,7 @@ install plugins and create user for login.
 
 INTEGRATION OF GIT AND MAVEN WITH JENKINS:
 NEW ITEM -- > NAME: NETFLIX JOB -- > FREE STYLE -- > OK 
-Source Code Management -- > GIT -- > https://github.com/devopsbyraham/jenkins-java-project.git
+Source Code Management -- > GIT -- > https://github.com/Venkatareddy1714/jenkins-java-project123.git
 Build Steps -- > add setp -- > Execute shell -- > save
 
 ================================================================================================================================================
@@ -297,7 +295,7 @@ pipeline {
     stages{
         stage('checkout') {
             steps {
-                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                git 'https://github.com/Venkatareddy1714/jenkins-java-project123.git'
             }
         }
         stage('build') {
@@ -328,7 +326,7 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                git 'https://github.com/Venkatareddy1714/jenkins-java-project123.git'
                 sh 'mvn compile'
                 sh 'mvn test'
                 sh 'mvn clean package'
@@ -347,7 +345,7 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                git 'https://github.com/Venkatareddy1714/jenkins-java-project123.git'
                 sh 'mvn compile'
             }
         }
@@ -370,7 +368,7 @@ pipeline {
     stages {
         stage('one') {
             steps {
-                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                git 'https://github.com/Venkatareddy1714/jenkins-java-project123.git'
                 sh '''
                 mvn compile
                 mvn test
@@ -422,7 +420,7 @@ pipeline {
     stages{
         stage('checkout') {
             steps {
-                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                git 'https://github.com/Venkatareddy1714/jenkins-java-project123.git'
             }
         }
         stage('build') {
@@ -467,7 +465,7 @@ VARIABLES:
 assigning the value 
 
 a=10
-name=raham
+name=venkat
 
 1. USER DEFINED VARIABLES:
 a. local vars: we can define inside job
@@ -483,7 +481,7 @@ pipeline {
     agent any 
     
     environment {
-        name = "raham"
+        name = "venkat"
         loc = "hyderabad"
     }
     stages {
@@ -509,7 +507,7 @@ pipeline {
     agent any 
     
     environment {
-        name = "raham"
+        name = "venkat"
         loc = "hyderabad"
     }
     stages {
@@ -559,7 +557,7 @@ TOMCAT SETUP:
 
   <role rolename="manager-gui"/>
   <role rolename="manager-script"/>
-  <user username="tomcat" password="raham123" roles="manager-gui, manager-script"/>
+  <user username="tomcat" password="venkat123" roles="manager-gui, manager-script"/>
 
 4. vim apache-tomcat-9.0.80/webapps/manager/META-INF/context.xml (delete 21,22)
 5. sh apache-tomcat-9.0.80/bin/startup.sh
@@ -608,7 +606,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                git 'https://github.com/Venkatareddy1714/jenkins-java-project123.git'
             }
         }
         stage('build') {
